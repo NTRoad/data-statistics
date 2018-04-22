@@ -6,6 +6,7 @@ const insertDB = require('./DB/insertDB');
 class insert extends Service {
   async index(data) {
     const {
+      pageId,
       startTime,
       endTime,
       uid,
@@ -15,6 +16,7 @@ class insert extends Service {
       referner,
     } = data;
     const json = {
+      pageId,
       startTime,
       endTime,
       uid,
